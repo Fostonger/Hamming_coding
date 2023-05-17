@@ -30,8 +30,7 @@ jobs:
     - name: Build hammingDecoder with Maven
       run: mvn -B package --file pom.xml
     - name: Copy hammingDecoder JAR file
-      run: 
-        rm -f hammingDecoder.jar
+      run:
         cp target/*.jar hammingDecoder.jar
     - name: Upload hammingDecoder JAR file
       uses: actions/upload-artifact@v2
